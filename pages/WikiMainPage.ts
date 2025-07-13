@@ -9,6 +9,6 @@ export class WikiMainPage {
     await this.page.getByRole('link', { name: 'Случайная статья' }).click(); 
   }
   getFeaturedArticleBlock(): Locator {
-    return this.page.locator('#mp-tfa'); // ID блока "Избранная статья"
+    return this.page.locator('#a-href'); // ID блока "Избранная статья"
   } 
 } 
