@@ -8,7 +8,5 @@ export class WikiMainPage {
   async openRandomArticle() { 
     await this.page.getByRole('link', { name: 'Случайная статья' }).click(); 
   }
-  getFeaturedArticleBlock(): Locator {
-    return this.page.locator('#a-href'); // ID блока "Избранная статья"
-  } 
+  
 } 
